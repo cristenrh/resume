@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/github.io/resume/static/css/main.cf0dbc6e.chunk.css",
+    "main.js": "/github.io/resume/static/js/main.5ba291f6.chunk.js",
+    "main.js.map": "/github.io/resume/static/js/main.5ba291f6.chunk.js.map",
+    "runtime-main.js": "/github.io/resume/static/js/runtime-main.cb29c01e.js",
+    "runtime-main.js.map": "/github.io/resume/static/js/runtime-main.cb29c01e.js.map",
+    "static/css/2.1f785abf.chunk.css": "/github.io/resume/static/css/2.1f785abf.chunk.css",
+    "static/js/2.dce18a7a.chunk.js": "/github.io/resume/static/js/2.dce18a7a.chunk.js",
+    "static/js/2.dce18a7a.chunk.js.map": "/github.io/resume/static/js/2.dce18a7a.chunk.js.map",
+    "static/js/3.298feb7a.chunk.js": "/github.io/resume/static/js/3.298feb7a.chunk.js",
+    "static/js/3.298feb7a.chunk.js.map": "/github.io/resume/static/js/3.298feb7a.chunk.js.map",
+    "index.html": "/github.io/resume/index.html",
+    "static/css/2.1f785abf.chunk.css.map": "/github.io/resume/static/css/2.1f785abf.chunk.css.map",
+    "static/css/main.cf0dbc6e.chunk.css.map": "/github.io/resume/static/css/main.cf0dbc6e.chunk.css.map",
+    "static/js/2.dce18a7a.chunk.js.LICENSE.txt": "/github.io/resume/static/js/2.dce18a7a.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/github.io/resume/static/media/bridge.12613cbb.jpg",
+    "static/media/hewett319.2cbd73ac.png": "/github.io/resume/static/media/hewett319.2cbd73ac.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb29c01e.js",
+    "static/css/2.1f785abf.chunk.css",
+    "static/js/2.dce18a7a.chunk.js",
+    "static/css/main.cf0dbc6e.chunk.css",
+    "static/js/main.5ba291f6.chunk.js"
+  ]
+}
