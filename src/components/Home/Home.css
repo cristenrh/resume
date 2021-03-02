@@ -1,0 +1,60 @@
+.resume .hero{
+    background: url('../../assets/bridge.jpg');
+    background-position:50% -145%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+
+.answer {
+    margin-top: 10px !important;
+}
+
+.columns {
+    flex-wrap: wrap;
+}
+
+
+body {
+    background-color: #232f3a;
+    height: 100vh;
+    display: grid;
+}
+   
+.wrapper {
+    height: 20vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 25ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  
+@media screen and (max-width: 768px) {
+    .resume .hero{
+        background-position:0 0;
+    }
+}

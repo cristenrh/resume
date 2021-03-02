@@ -1,0 +1,17 @@
+footer, .footer {
+    background-color: var(--teal) !important;
+    color: #fff;
+    padding: 0 !important;
+  }
+  
+  .icon {
+    color: var(--white);
+    margin-left: 10px;
+  }
+
+
+@media screen and (max-width: 1024px) {
+    footer, .footer {
+      padding: 0 15px !important;
+  }
+  }
