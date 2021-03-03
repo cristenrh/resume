@@ -32,7 +32,7 @@ return (
                                 </div>
                                 <div class="wrapper">
                                 <div class="typing-demo">
-                                    Welcome to Hewett Central
+                                    Hi I'm Cristen Hewett
                                     </div>
                                 </div>
                         </div>
