@@ -1,0 +1,23 @@
+
+.nilogo {
+   width: 70px;
+}
+
+.resume .content ul {
+    margin-top: 0;
+}
+
+.resume .clip-circle {
+    clip-path: circle(39% at 50% 35%);
+  }
+
+  .resume hr {
+    background-color: #ccc;
+    border: none;
+    display: block;
+    height: 1px;
+    left: 17%;
+    margin: 1.5rem 0;
+    position: relative;
+    width: 75%;
+  }

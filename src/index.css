@@ -1,0 +1,90 @@
+:root {
+  --teal: #3EBAB1;
+  --lightteal: #63D1C9;
+  --lighterteal: #D0F8F5;
+  --white: #ffffff;
+  --darkgrey: #383838;
+  --lightgray: #808080;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-color: var(--white); 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1.resume,
+.resume h1 {
+  font-family: serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  color: var(--darkgray);
+}
+
+.resume h3 {
+  color: var(--darkgray);
+  font-family: serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 24px;
+}
+
+h1.resume:before {
+  background-color: var(--teal);
+  content: "";
+  display: block;
+  height: 8px;
+  left: 50%;
+  margin: -4px 0 0 -60px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+
+.site-banner-header {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+
+.site-banner-header:before, 
+.site-banner-header:after {
+  border-top: 1px solid var(--lightgray);
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.site-banner-header:before {
+  left: 25%;
+  top: 0;
+  width: 50%;
+}
+
+.site-banner-header:after {
+  bottom: 0;
+  left: 44%;
+  width: 12%;
+}
+
+.resume li {
+  padding-bottom: 20px;
+}
+
