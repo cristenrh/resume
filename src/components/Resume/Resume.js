@@ -7,7 +7,7 @@ import CHlogo from "../../assets/ch-logo.png";
 
 function Resume() {
 return (
-    <div className="App">
+    <div className="App main">
         <div className="resume">
         <div className="site-banner-header">
             <h1 className="resume">

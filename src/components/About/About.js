@@ -3,7 +3,7 @@ import Hewett from "../../assets/hewett319.png";
 
 function About() {
     return (
-        <div className="App">
+        <div className="App main">
             <div className="resume">
                 <div className="site-banner-header">
                     <h1 className="resume">

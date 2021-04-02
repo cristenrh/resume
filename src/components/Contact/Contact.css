@@ -1,3 +1,8 @@
+p.contact {
+    position: relative;
+    top: -60px;
+}
+
 .label {
     text-align: left;
 }

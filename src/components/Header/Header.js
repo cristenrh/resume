@@ -1,52 +1,62 @@
 import './Header.css';
-import { Link } from 'react-router-dom' ;
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon as MenuIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon as CloseMenu } from '@fortawesome/react-fontawesome';
+
+import { useState } from "react";
+
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
+const Header = () => {
 
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-function Header() {
-
-  function toggleBurgerMenu() {
-    document.querySelector('.navbar-menu').classList.toggle('is-active');
-    document.querySelector('.navbar-burger').classList.toggle('is-active');
-  }
   return (
     <div className="App">
-      <nav className="navbar mainnav" role="navigation" aria-label="main navigation">
-          <div className="container">
+      {/* <nav className="navbar mainnav" role="navigation" aria-label="main navigation"> */}
+          <div className="header">
               <div className="navbar-brand">
-                <a className="navbar-item" href="/">
+                <a href="/cristen">
                 Cristen Hewett
                 </a> 
-              
-                <a id="navbarBurger" role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" onClick={toggleBurgerMenu} datat-target="navMenuIndex">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
               </div>
-              
-            
-              <div id="navbarBasicExample" className="navbar-menu" >
-          <div className="navbar-end">
-          <Link to="/" className="navbar-item has-background-grey-darker" >
-              Home
-            </Link>
-            <Link to="/about" className="navbar-item has-background-grey-darker" >
-              About
-            </Link>
-            <Link to="/resume" className="navbar-item has-background-grey-darker" >
-              Resume
-            </Link>
-            <Link to="/contact" className="navbar-item has-background-grey-darker" >
-              Contact
-            </Link>
-
+              <ul className={click ? "nav-options active" : "nav-options" } >
+              <li className="option" onClick={closeMobileMenu}>
+              <Link to={`${process.env.PUBLIC_URL}/`}   >
+                  Home
+                </Link>
+                </li>
+                <li className="option" onClick={closeMobileMenu}>
+                <Link to={`${process.env.PUBLIC_URL}/about`} >
+                  About
+                </Link>
+                </li>
+                <li className="option" onClick={closeMobileMenu}>
+                <Link to={`${process.env.PUBLIC_URL}/resume`}  >
+                  Resume
+                </Link>
+                </li>
+                <li className="option" onClick={closeMobileMenu}>
+                <Link to={`${process.env.PUBLIC_URL}/contact`}  >
+                  Contact
+                </Link>
+                </li>
+          </ul>
+        <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="menu-icon" icon={ faTimes } />
+        ) : (
+          <MenuIcon className="menu-icon" icon={ faBars } />
+          // <i><FontAwesomeIcon icon={ faBars } /></i>
+        )}
+      </div>
           </div>
-        </div>
-          
-          </div>
-      </nav>
+      {/* </nav> */}
 
     </div>
   );

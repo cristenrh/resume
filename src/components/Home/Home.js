@@ -15,7 +15,7 @@ function Home() {
 
 return (
 
-        <div className="App">
+        <div className="App main">
             <div className="resume">
              
                     <section  className="hero">

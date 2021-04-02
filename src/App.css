@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.App.fullHeight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
 
 
 @keyframes App-logo-spin {

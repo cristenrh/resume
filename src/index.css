@@ -87,4 +87,6 @@ h1.resume:before {
 .resume li {
   padding-bottom: 20px;
 }
-
+ a {
+   color: var(--teal);
+ }

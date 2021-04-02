@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../../../hewettcentral"
+		},
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../grease"
+		},
+		{
+			"path": "../../../../robotfriends"
+		},
+		{
+			"path": "../../../../react-scroll-tutorial"
+		}
+	],
+	"settings": {
+	}
+}

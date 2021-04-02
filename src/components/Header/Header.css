@@ -1,18 +1,26 @@
+.header{
+  display: flex;
+  background: var(--darkgrey);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 
+};
 
   nav.navbar {
     background-color: var(--darkgrey);
 }
      
-  a.navbar-item{
-    color: var(--teal); 
-    padding: 0.5rem 1.75rem;
-    background: none;
-  }
+.navbar-brand a {
+  color: var(--teal);
+  padding: 0.5rem 1rem;
+  background: none;
+}
 
-  a.navbar-item:hover,
-  a.navbar-item:focus{
-    background-color: var(--darkgrey) !important;
+  .navbar-brand a:hover,
+  .navbar-brand a:focus,
+  .option a:hover,
+  .option a:focus{
     color: var(--lightgray) !important;
     text-decoration: none;
   }
@@ -24,20 +32,71 @@
     font-family: Georgia;
   }
 
-  .mainnav a.navbar-burger span{
-    background-color: lightgray;
+  .option {
+    align-items: center;
+    color: #4a4a4a;
+    display: flex;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    position: relative;
   }
+
+  .mobile-menu {
+    display: none;
+}
+
+.nav-options {
+display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 17px;
+  text-decoration: none;
+
+}
    
   @media screen and (max-width: 1024px) {
 
- 
-    .mainnav a.navbar-burger{
-      float: right;
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+        color: var(--teal);
+        padding-right: 12px;
     }
 
-    .navbar-menu.is-active {
-      background-color: #363636 !important;
-      text-align: left;
-  }
+    .menu-icon {
+      width: 45px;
+      height: 45px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem 1rem;
+    }
+  
+
+    .nav-options {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      right: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      flex-direction: column;
+      list-style-type: none;
+      grid-gap: 0px;
+    }
+    .nav-options.active {
+      background: var(--darkgrey);
+      right: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 3;
+      align-content: center;
+      padding-left: 0px;
+    }
 
   }
